@@ -19,7 +19,9 @@ export default function Login() {
             }
         })
         response = await response.json()
-        localStorage.setItem('token',await JSON.stringify(response["access_token"]))
+        localStorage.setItem('token',await response["access_token"])
+        localStorage.setItem('user_id',await response["user_id"])
+
        }
     return (<div> 
           <form >

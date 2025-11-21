@@ -14,28 +14,21 @@ export default function Home() {
         />
        
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-        <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
+       
+           <Link className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
             target="_blank"
-            rel="noopener noreferrer"
-            
-          >
-           <Link href={'/signup'}>Signup</Link> 
-        </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
+            rel="noopener noreferrer" href={'/signup'}>Signup</Link> 
+       
+         
+            <Link   className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Link href={'/login'}> login</Link>
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
+            rel="noopener noreferrer" href={'/login'}> login</Link>
+         
+          
+            <Link  className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Link href={'/comment'}>comment</Link>
-          </a>
+            rel="noopener noreferrer" href={'/comment'}>comment</Link>
+         
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
