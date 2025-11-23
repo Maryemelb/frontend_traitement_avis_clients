@@ -34,7 +34,7 @@ export default function Login() {
                 <div className="w-full sm:max-w-md bg-white rounded-lg shadow dark:border md:mt-0 ">
                     <div className="p-6 space-y-4 md:space-y-6 ">
                         <h1 className="font-bold text-2xl dark:text-white">Sign in to your account</h1>
-                        <form action="" onSubmit={submit} class="space-y-4">
+                        <form action="" onSubmit={submit} className="space-y-4">
                             <div>
                                 <label htmlFor="email" className="block font-medium text-sm mb-2 text-gray-900 dark:text-white">Your email</label>
                                 <input type="email" name="email" placeholder="name@example.com" onChange={e => setUsername(e.target.value)} className="w-full focus:outline-none bg-gray-100 py-3 px-3 rounded-lg text-gray-900 border-gray-400 focus:border-amber-200 dark:placeholder-gray-700" />
@@ -44,7 +44,7 @@ export default function Login() {
                                 <input type="password" name="password" placeholder="••••••••" onChange={e => setPassword(e.target.value)} className="w-full focus:outline-none bg-gray-100 py-3 px-3 rounded-lg text-gray-900 border-gray-400 focus:border-amber-200 dark:placeholder-gray-700" />
                             </div>
                             <button type="submit" className="w-full bg-green-400 rounded-2xl py-2 font-bold text-lg text-white">Sign in</button>
-                            <p className="text-gray-400 dark:text-white" >Don't have an account <Link href={"/signup"} className="text-green-500 underline">sign up</Link></p>
+                            <p className="text-gray-400 dark:text-white" >Dont have an account <Link href={"/signup"} className="text-green-500 underline">sign up</Link></p>
                         </form>
                     </div>
 

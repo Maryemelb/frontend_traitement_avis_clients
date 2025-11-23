@@ -1,4 +1,4 @@
-FROM node:22.11.0-alpine
+FROM node:22.11.0
 
 WORKDIR /app
 
@@ -10,4 +10,7 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "5000"]
+ENV HOST 0.0.0.0
+ENV PORT 5000
+
+CMD ["npm", "run", "dev", "--", "-H", "0.0.0.0", "-p", "5000"]
