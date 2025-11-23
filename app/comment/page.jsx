@@ -28,9 +28,8 @@ export default function Comment() {
           }
       };
     useEffect(() => {
-        console.log('hello')
-        loadComments()
-    }, [data])
+        loadComments();
+    }, [comment])
 
     const submit = async (e) => {
         e.preventDefault()
